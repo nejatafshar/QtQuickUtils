@@ -1,0 +1,30 @@
+module QtQuickUtils
+ExtendedApplicationWindow 1.0 ExtendedApplicationWindow.qml
+SplashScreen 1.0 SplashScreen.qml
+LoginDialog 1.0 LoginDialog.qml
+AboutWindow 1.0 AboutWindow.qml
+VirtualKeyboard 1.0 VirtualKeyboard.qml
+IconMenuItem 1.0 IconMenuItem.qml
+IconMenu 1.0 IconMenu.qml
+ImagePreview 1.0 ImagePreview.qml
+ColorPicker 1.0 ColorPicker.qml
+DoubleSpinBox 1.0 DoubleSpinBox.qml
+DurationPicker 1.0 DurationPicker.qml
+IconButton 1.0 IconButton.qml
+IconRoundButton 1.0 IconRoundButton.qml
+IconTabButton 1.0 IconTabButton.qml
+MessagePanel 1.0 MessagePanel.qml
+MessagePopup 1.0 MessagePopup.qml
+FlowComboBox 1.0 FlowComboBox.qml
+FlowTextField 1.0 FlowTextField.qml
+FlowSpinBox 1.0 FlowSpinBox.qml
+PasswordTextField 1.0 PasswordTextField.qml
+ExtendedDialog 1.0 ExtendedDialog.qml
+ScaleSelection 1.0 ScaleSelection.qml
+AvatarControl 1.0 AvatarControl.qml
+DelayedFileDialog 1.0 DelayedFileDialog.qml
+SwipeArea 1.0 SwipeArea.qml
+BusyIndicator2 1.0 BusyIndicator2.qml
+RoundedImage 1.0 RoundedImage.qml
+AuthenticationDialog 1.0 AuthenticationDialog.qml
+

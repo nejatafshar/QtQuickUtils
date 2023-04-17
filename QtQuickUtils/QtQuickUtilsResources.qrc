@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/QtQuickUtils">
+        <file>fonts/Font Awesome 6 Free-Solid-900.otf</file>
+        <file>fonts/RobotoYekanRB.ttc</file>
+        <file>qmldir</file>
+        <file>ExtendedApplicationWindow.qml</file>
+        <file>IconMenuItem.qml</file>
+        <file>IconMenu.qml</file>
+        <file>AboutWindow.qml</file>
+        <file>SplashScreen.qml</file>
+        <file>LoginDialog.qml</file>
+        <file>VirtualKeyboard.qml</file>
+        <file>DurationPicker.qml</file>
+        <file>DoubleSpinBox.qml</file>
+        <file>IconTabButton.qml</file>
+        <file>FlowComboBox.qml</file>
+        <file>FlowTextField.qml</file>
+        <file>FlowSpinBox.qml</file>
+        <file>PasswordTextField.qml</file>
+        <file>ImagePreview.qml</file>
+        <file>MessagePopup.qml</file>
+        <file>IconButton.qml</file>
+        <file>IconRoundButton.qml</file>
+        <file>ExtendedDialog.qml</file>
+        <file>MessagePanel.qml</file>
+        <file>ColorPicker.qml</file>
+        <file>ScaleSelection.qml</file>
+        <file>AvatarControl.qml</file>
+        <file>DelayedFileDialog.qml</file>
+        <file>SwipeArea.qml</file>
+        <file>BusyIndicator2.qml</file>
+        <file>RoundedImage.qml</file>
+        <file>AuthenticationDialog.qml</file>
+    </qresource>
+</RCC>
