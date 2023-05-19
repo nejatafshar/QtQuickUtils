@@ -60,7 +60,7 @@ engine.rootContext()->setContextProperty(
 Check the provided example in the source code if you have any confusion.
 
 In case you want to use individual components in your source code without using `ExtendedApplicationWindow` as the main type in `main.qml`, 
-you should define a font loader for **FontAwesome** in your `main.qml` as it's the font for icons of components:
+you should define a font loader for **Font Awesome** in your `main.qml` as it's the font for icons of components:
 
 ```qml
 FontLoader {
@@ -73,21 +73,21 @@ FontLoader {
 
 #### ExtendedApplicationWindow
 
-Extends ApplicationWindow with the following features:
+Extends `ApplicationWindow` with the following features:
 
- * Dark and light themes with Roboto font and Font Awesome for icons
+ * Dark and light themes with **Roboto** font and **Font Awesome** for icons
  * Login dialog, splash screen and about dialog
  * UI scaling
  * Virtual keyboard
 
 #### ExtendedDialog
 
-Extends Dialog and adds icon, close button, ability to move and common YES/NO/OK/CANCEL buttons in footer
+Extends `Dialog` and adds icon, close button, ability to move and common **YES/NO/OK/CANCEL** buttons in footer
 
 
 #### AuthenticationDialog
 
-A Dialog to ask username and password
+A `Dialog` to ask username and password
 
 #### AvatarControl
 
@@ -111,15 +111,16 @@ Component to define and select time duration in hours, minutes and seconds
 
 #### FlowComboBox, FlowSpinBox, FlowTextField
 
-Combobox, Spinbox and Textfield respectively with titles flowing based on width
+`Combobox`, `Spinbox` and `Textfield` respectively with titles flowing based on width. If the width is not sufficient to display title and content, 
+component content is flowed to buttom:
 
 #### IconButton, IconRoundButton, IconTabButton
 
-Button, RoundButton and TabButton with ability to define Font Awesome icon
+`Button`, `RoundButton` and `TabButton` with ability to define **Font Awesome** icon
 
 #### IconMenu, IconMenuItem
 
-Menu and MenuItem with a Font Awesome icon
+`Menu` and `MenuItem` with a **Font Awesome** icon
 
 #### ImagePreview
 
@@ -139,7 +140,7 @@ A popup to show a specific message or alarm to user
 
 #### PasswordTextField
 
- Textfield suitable for passwords and option to view entered value
+ `Textfield` suitable for passwords and option to view entered value
 
 #### SplashScreen
 
@@ -147,7 +148,7 @@ An auto-hiding splashscreen window
 
 #### SwipeArea
 
-A MouseArea that detects swipe left/right/up/down gestures
+A `MouseArea` that detects swipe left/right/up/down gestures
 
 #### VirtualKeyboard
 
