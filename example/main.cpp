@@ -34,8 +34,6 @@ main(int argc, char* argv[]) {
     QQmlApplicationEngine engine;
     engine.addImportPath("qrc:///");
     engine.rootContext()->setContextProperty(
-        "dpi", qApp->primaryScreen()->logicalDotsPerInch());
-    engine.rootContext()->setContextProperty(
         "HASVIRTUALKEYBOARD",
         QProcessEnvironment::systemEnvironment().value("QT_IM_MODULE") ==
             "qtvirtualkeyboard");
