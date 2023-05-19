@@ -1,16 +1,73 @@
 # QtQuickUtils
 
-A set of useful QML components based on QtQuick Controls 2
+A set of useful QML components based on **QtQuick Controls 2**
 
 ### Dependencies
 
- * Qt 5.15 or higher
+ * **Qt** 5.15 or higher
 
 ### How to use
 
-Just include the `QtQuickUtils.pri` file in your qmake project:
+Include the `QtQuickUtils.pri` file in your qmake project:
 
-    include(QtQuickUtils/QtQuickUtils.pri)
+```javascript
+include(QtQuickUtils/QtQuickUtils.pri)
+```
+set Qt Quick style to `Material` in `main.cpp` of your app before loading qml engine:
+
+```c++
+QQuickStyle::setStyle("Material");
+```
+
+add qrc path to qml import pathes in your `main.cpp`:
+
+```c++
+QQmlApplicationEngine engine;
+engine.addImportPath("qrc:///");
+```
+
+then you can include **QtQuickUtils** module in any qml file:
+
+```qml
+import QtQuickUtils 1.0
+```
+
+and define any of the components:
+
+```qml
+SwipeArea {
+    onSwipeRight: {
+        ...
+    }
+}
+```
+
+to enable using virtual keyboard, set the relevant environment variable before loading qml engine:
+
+```c++
+qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
+```
+
+and set this context property:
+
+```c++
+engine.rootContext()->setContextProperty(
+        "HASVIRTUALKEYBOARD",
+        QProcessEnvironment::systemEnvironment().value("QT_IM_MODULE") ==
+            "qtvirtualkeyboard");
+```
+
+Check the provided example in the source code if you have any confusion.
+
+In case you want to use individual components in your source code without using `ExtendedApplicationWindow` as the main type in `main.qml`, 
+you should define a font loader for **FontAwesome** in your `main.qml` as it's the font for icons of components:
+
+```qml
+FontLoader {
+        id: fontAwesome
+        source: "qrc:/path/to/Font Awesome 6 Free-Solid-900.otf"
+}
+```
 
 ## Components
 
