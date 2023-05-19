@@ -25,8 +25,9 @@ Drawer {
     QtObject {
         id: internal
 
-        property int ppi: typeof scl !== "undefined" ? scl.c : Screen.pixelDensity * 25.4
+        property int ppi: typeof scl !== "undefined" ? scl.ppi : Screen.pixelDensity * 25.4
         property int ppiz: typeof scl !== "undefined" ? scl.dpiz : Screen.pixelDensity * 25.4
+        property int spacing: 0.04 * ppiz
         property int scrollBar: 0.1 * ppiz
         property int section: 0.5 * ppiz
         property int h2: typeof scl !== "undefined" ? scl.h2 : 14

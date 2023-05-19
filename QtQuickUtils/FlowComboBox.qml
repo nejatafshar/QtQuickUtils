@@ -24,7 +24,7 @@ Flow {
 
     signal focused
 
-    spacing: width > threshold ? internal.dpi * 0.1 : -internal.dpi * 0.1
+    spacing: width > threshold ? internal.ppi * 0.1 : -internal.ppi * 0.1
 
     QtObject {
         id: internal
@@ -50,7 +50,7 @@ Flow {
                 textMetrics.text = model[i]
                 w = Math.max(textMetrics.width, w)
             }
-            implicitWidth = w + 2 * rightPadding + 2 * leftPadding + internal.dpi * 0.8
+            implicitWidth = w + 2 * rightPadding + 2 * leftPadding + internal.ppi * 0.8
         }
         onFocusChanged: {
             if (focus)

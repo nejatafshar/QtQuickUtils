@@ -239,25 +239,25 @@ ApplicationWindow {
         property real fontScale: win.fontScale > 0 ? win.fontScale : 1
 
         property int ppi: typeof dpi !== "undefined" ? dpi : Screen.pixelDensity * 25.4
-        property int dpiz: dpi * zoom
+        property int dpiz: ppi * zoom
 
-        property int spacing: 0.04 * dpi * zoom
-        property int fspacing: 0.04 * dpi
-        property int flspacing: 0.02 * dpi
+        property int spacing: 0.04 * ppi * zoom
+        property int fspacing: 0.04 * ppi
+        property int flspacing: 0.02 * ppi
         property int bigSpacing: spacing * 2
-        property int margin: 0.1 * dpi * zoom
-        property int drawer: dpi * 2.8 * zoom
-        property int drawerHeader: dpi * 0.6 * zoom
-        property int scrollBar: dpi * 0.1 * zoom
-        property int section: dpi * 0.5 * zoom
-        property int delegate: dpi * 0.2 * zoom
+        property int margin: 0.1 * ppi * zoom
+        property int drawer: ppi * 2.8 * zoom
+        property int drawerHeader: ppi * 0.6 * zoom
+        property int scrollBar: ppi * 0.1 * zoom
+        property int section: ppi * 0.5 * zoom
+        property int delegate: ppi * 0.2 * zoom
         property int component: 40 * zoom
         property int toolBar: 40 * zoom
         property int menuBar: 43 * zoom
-        property int statusBar: dpi * 0.3 * zoom
+        property int statusBar: ppi * 0.3 * zoom
         property int menuItem: 40 * zoom
-        property int button: dpi * 0.25 + (dpiz * 0.2)
-        property int toolButton: dpi * 0.6 * zoom
+        property int button: ppi * 0.25 + (dpiz * 0.2)
+        property int toolButton: ppi * 0.6 * zoom
 
         property int h0: 20 * zoom * fontScale
         property int h1: 16 * zoom * fontScale
