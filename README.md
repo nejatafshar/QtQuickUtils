@@ -153,3 +153,10 @@ A `MouseArea` that detects swipe left/right/up/down gestures
 #### VirtualKeyboard
 
  A component that defines and handles a virtual keyboard for application
+ 
+ 
+ ## License
+
+Copyright (C) 2022-present Nejat Afshar <nejatafshar@gmail.com>
+
+Distributed under the MIT License (http://opensource.org/licenses/MIT)
